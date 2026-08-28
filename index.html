@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Taha ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0; min-height:100vh; overflow:hidden; color:#fff;
+ font-family:Arial,sans-serif;
+ background:radial-gradient(circle at 50% 25%,#162a68 0,#07102f 45%,#020515 100%);
+}
+.page{
+ display:none; width:100vw; height:100vh; padding:18px;
+ align-items:center; justify-content:center;
+ position:absolute; inset:0;
+}
+.page.active{display:flex;animation:in .65s ease}
+@keyframes in{from{opacity:0;transform:scale(.96) translateX(30px)}to{opacity:1;transform:none}}
+.card{
+ width:min(900px,94vw); max-height:94vh; overflow:auto; text-align:center;
+ padding:25px 20px; border-radius:28px;
+ background:rgba(2,8,30,.78);
+ border:1px solid rgba(98,145,255,.55);
+ box-shadow:0 0 35px rgba(55,115,255,.35);
+ backdrop-filter:blur(8px);
+}
+h1{font-size:clamp(36px,8vw,70px);margin:10px 0;text-shadow:0 0 20px #4c86ff}
+h2{font-size:clamp(25px,5vw,42px);margin:8px 0 15px}
+p{font-size:18px;line-height:1.65;color:#e8ecff}
+.pink{color:#ff70b5;text-shadow:0 0 12px #ff3f99}
+button{
+ color:white;background:transparent;border:1px solid #658cff;
+ padding:12px 27px;border-radius:30px;font-size:16px;margin:8px;
+ box-shadow:0 0 15px rgba(65,120,255,.65);cursor:pointer
+}
+button:hover{background:#14235a}
+.media{
+ width:min(520px,88vw); max-height:59vh; object-fit:contain;
+ border-radius:22px;border:2px solid rgba(116,158,255,.55);
+ box-shadow:0 0 28px rgba(53,112,255,.42)
+}
+video{width:min(820px,90vw);max-height:62vh;border-radius:22px}
+.counter{position:fixed;right:17px;top:12px;z-index:10;color:#d8e1ff}
+.star{
+ position:fixed;width:3px;height:3px;background:white;border-radius:50%;
+ box-shadow:0 0 9px #75aaff;animation:blink 2s infinite alternate
+}
+@keyframes blink{from{opacity:.15}to{opacity:1}}
+.heart{
+ position:fixed;bottom:-30px;font-size:22px;pointer-events:none;
+ animation:up linear forwards;z-index:2
+}
+@keyframes up{to{transform:translateY(-115vh) rotate(30deg);opacity:0}}
+.small{font-size:14px;color:#aab8e8}
+</style>
+</head>
+<body>
+<div id="counter"></div>
+
+<section class="page active">
+ <div class="card">
+  <div style="font-size:55px">🎂✨</div>
+  <h1>Happy Birthday<br><span class="pink">Taha ❤️</span></h1>
+  <p>Aaj ka din bohot khaas hai...<br>Mere sab se pyaare insaan ke liye 💗</p>
+  <button onclick="next()">Start →</button>
+ </div>
+</section>
+
+<section class="page"><div class="card">
+ <h2>Tum aaye... 💕</h2>
+ <img class="media" src="pic1.jpg">
+ <p>Tum meri zindagi mein aaye aur sab kuch aur bhi khoobsurat ho gaya. ✨</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Tumhara saath... 🌸</h2>
+ <img class="media" src="pic2.jpg">
+ <p>Tumhara saath meri khushi ki sab se pyari wajah hai. ❤️</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Tumhari baatein... 💗</h2>
+ <img class="media" src="pic3.jpg">
+ <p>Tumhari baatein dil ko sukoon deti hain. 🥹</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Har lamha... 🌿</h2>
+ <img class="media" src="pic4.jpg">
+ <p>Tumhare saath guzra har lamha mere liye yaadgaar hai. 💕</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Tumhara hona... 🥹</h2>
+ <img class="media" src="pic5.jpg">
+ <p>Tumhara hona meri duniya ko aur bhi pyara bana deta hai. ❤️</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Barish ho ya dhoop... ☔</h2>
+ <img class="media" src="pic6.jpg">
+ <p>Har mausam tumhare saath aur bhi khoobsurat lagta hai. ✨</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Tumhari hansi... 🌹</h2>
+ <img class="media" src="pic7.jpg">
+ <p>Tumhari hansi meri favourite cheezon mein se ek hai. 💖</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Ek pyari si yaad... 🌼</h2>
+ <img class="media" src="pic8.jpg">
+ <p>Bas yunhi hamesha khush rehna aur muskurate rehna. ❤️</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>Tum meri dua ho... 🤲</h2>
+ <img class="media" src="pic9.jpg">
+ <p>Meri dua hai Allah tumhein hamesha khush rakhe aur tumhari har achi dua qabool ho. 🤍</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <h2>🎬 Tumhare liye surprise...</h2>
+ <video controls playsinline>
+  <source src="birthday-video.mp4" type="video/mp4">
+ </video>
+ <p class="small">Video play karne ke liye ▶️ dabao.</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <div style="font-size:58px">💌</div>
+ <h2>Taha, ek baat... 🥹</h2>
+ <p>Agay dekhne se pehle ek baat... 💌</p>
+ <p><b>Ye surprise aapki begum ki taraf se tha. 🥹❤️</b></p>
+ <p>Aapko kaisa laga? <b>Reply lazmi karna</b> 😚</p>
+ <button onclick="next()">Next →</button>
+</div></section>
+
+<section class="page"><div class="card">
+ <div style="font-size:65px">🎂💖✨</div>
+ <h1>Happy Birthday<br><span class="pink">Taha ❤️</span></h1>
+ <p>Allah aapko hamesha khush rakhe. 🤲<br>Love you hamesha. 💗</p>
+ <button onclick="location.reload()">↻ Start Again</button>
+</div></section>
+
+<script>
+const pages=document.querySelectorAll(".page");
+let current=0;
+function show(){
+ pages.forEach((p,i)=>p.classList.toggle("active",i===current));
+ document.getElementById("counter").textContent=(current+1)+" / "+pages.length;
+}
+function next(){if(current<pages.length-1){current++;show();}}
+show();
+
+for(let i=0;i<90;i++){
+ const s=document.createElement("span");
+ s.className="star";
+ s.style.left=Math.random()*100+"vw";
+ s.style.top=Math.random()*100+"vh";
+ s.style.animationDelay=Math.random()*2+"s";
+ document.body.appendChild(s);
+}
+setInterval(()=>{
+ const h=document.createElement("div");
+ h.className="heart";
+ h.textContent=["❤️","💗","💖","💕","✨"][Math.floor(Math.random()*5)];
+ h.style.left=Math.random()*100+"vw";
+ h.style.animationDuration=(5+Math.random()*5)+"s";
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),10000);
+},600);
+</script>
+</body>
+</html>
